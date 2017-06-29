@@ -1,0 +1,30 @@
+# Configuration file to simplify the energy spectrum calculation
+# use the format (without the #):
+#folder (name of folder)/ -- where the results are going to be written
+#cube num (number)
+#sd (date in format: yyyy-mm-dd) used in 'fromztof'
+#l (number)
+#m (number)
+#dx (number)
+#dy (number)
+#dz (number)
+#x2min (number)
+#x2max (number)
+#points (number)
+#g0 0.1 (coupling)
+#M0 500 (MeV, resonance mass)
+
+folder spectrum_g1/
+cube num 20
+#sd 2017-06-21
+L 7.75
+l 0
+m 0
+dx 0
+dy 0
+dz 0
+x2min -0.1
+x2max 5
+points 350
+g0 1
+M0 500
