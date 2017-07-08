@@ -1,3 +1,10 @@
+# Calculate the analytical numerator f of the Z function
+# Input: x2 guesses of the solution of the Luscher eq
+# found with the quicklook.py macro.
+# Output: f(x2) with x2 close to the guesses
+
+points_f = 25
+
 # -----------------
 # Import packages
 import pickle
@@ -16,29 +23,29 @@ sd = False
 
 with open(config_file, 'r') as f:
 	for line in f:
-		if line[0:6] == 'folder':
+		if line[0:7] == 'folder ':
 			folder = line[7:-1]
+		if line[0:2] == 'l ':
+			l = int(line[2:])
+		if line[0:2] == 'm ':
+			m = int(line[2:])
+		if line[0:3] == 'dx ':
+			dx = int(line[2:])
+		if line[0:3] == 'dy ':
+			dy = int(line[2:])
+		if line[0:3] == 'dz ':
+			dz = int(line[2:])
+		if line[0:2] == 'L ':
+			L_lattice_size = float(line[2:]) # fermis
 		if line[0:9] == 'cube num ':
 			cube_num = int(line[9:])
-		if line[0] == 'L':
-			L_lattice_size = float(line[2:])
-		if line[0] == 'l':
-			l = int(line[2:])
-		if line[0] == 'm':
-			m = int(line[2:])
-		if line[0:2] == 'dx':
-			dx = int(line[2:])
-		if line[0:2] == 'dy':
-			dy = int(line[2:])
-		if line[0:2] == 'dz':
-			dz = int(line[2:])
-		if line[0:5] == 'x2min':
-			x2min = float(line[6:])	
-		if line[0:5] == 'x2max':
+		if line[0:6] == 'x2max ':
 			x2max = float(line[6:])
-		if line[0:6] == 'points':
+		if line[0:6] == 'x2min ':
+			x2min = float(line[6:])
+		if line[0:7] == 'points ':
 			points = int(line[7:])
-		if line[0:2] == 'sd':
+		if line[0:3] == 'sd ':
 			sd = True
 			speci_dat = str(line[3:-1])
 
@@ -231,8 +238,8 @@ for guess in guesses:
 
 	print 'Calculating F around ' + str(guess*(L/(2*np.pi))**2)
 
-	x2fmax = (guess)*(L/(2*np.pi))**2 + 2 * x2spacing
-	x2fmin = (guess)*(L/(2*np.pi))**2 - 2 * x2spacing
+	x2fmax = (guess)*(L/(2*np.pi))**2 + x2spacing
+	x2fmin = (guess)*(L/(2*np.pi))**2 - x2spacing
 
 	# Poles in range of guess :
 	poles = np.array([])
@@ -262,8 +269,6 @@ for guess in guesses:
 
 	# ---------
 	# Several point calculation
-
-	points_f = 50
 
 	print 'From '+ str(x2fmin)+ ' to ' +str(x2fmax)+ ' ' +str(points_f)+' points'
 

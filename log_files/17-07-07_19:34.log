@@ -1,0 +1,413 @@
+Script started on Fri Jul  7 19:34:39 2017
+command: sh run.sh
+------- BEGIN SPECTRUM CALCULATION --------
+-------------------------------
+--- Modifying configuration file ---
+L = 5.0 fm
+-------------------------------
+----- Loop 1 out of 13 --------
+-------------------------------
+-------------------------------
+--- Evaluating zdlm.py ---
+Lattice size: 5.0 fm
+Z function with (l,m) = (0,0)
+ d = [0, 0, 0]
+Shells (nmax) = 8
+From -0.1 to 3.0 200 points
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+110
+120
+130
+140
+150
+160
+170
+180
+190
+../felipe/zdlm.py:217: RuntimeWarning: divide by zero encountered in divide
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+../felipe/zdlm.py:217: RuntimeWarning: invalid value encountered in multiply
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+-------------------------------
+--- Evaluating quicklook.py ---
+quicklook.py:83: RuntimeWarning: invalid value encountered in multiply
+  value = firs_fact*zdlm
+Guesses found: 4
+-------------------------------
+--- Evaluating fzdlm_g.py ---
+F function with (l,m) = (0,0)
+ d = [0, 0, 0]
+4 guesses.
+Calculating F around -0.00653266331658
+Using poles in: [ 0.]
+From -0.0221105527638 to 0.00904522613065 25 points
+0
+10
+20
+Calculating F around 0.305025125628
+Using poles in: []
+From 0.289447236181 to 0.320603015075 25 points
+0
+10
+20
+Calculating F around 1.00603015075
+Using poles in: [ 1.]
+From 0.990452261307 to 1.0216080402 25 points
+0
+10
+20
+Calculating F around 2.00301507538
+Using poles in: [ 2.]
+From 1.98743718593 to 2.01859296482 25 points
+0
+10
+20
+-------------------------------
+--- Evaluating findspec.py ---
+Solution found at 290.038 MeV
+Solution found at 401.954 MeV
+Solution found at 576.886 MeV
+Solution found at 760.370 MeV
+-------------------------------
+--- Modifying configuration file ---
+L = 5.25 fm
+-------------------------------
+----- Loop 2 out of 13 --------
+-------------------------------
+-------------------------------
+--- Evaluating zdlm.py ---
+Lattice size: 5.25 fm
+Z function with (l,m) = (0,0)
+ d = [0, 0, 0]
+Shells (nmax) = 8
+From -0.1 to 3.0 200 points
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+110
+120
+130
+140
+150
+160
+170
+180
+190
+../felipe/zdlm.py:217: RuntimeWarning: divide by zero encountered in divide
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+../felipe/zdlm.py:217: RuntimeWarning: invalid value encountered in multiply
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+-------------------------------
+--- Evaluating quicklook.py ---
+quicklook.py:83: RuntimeWarning: invalid value encountered in multiply
+  value = firs_fact*zdlm
+Guesses found: 4
+-------------------------------
+--- Evaluating fzdlm_g.py ---
+F function with (l,m) = (0,0)
+ d = [0, 0, 0]
+4 guesses.
+Calculating F around -0.00653266331658
+Using poles in: [ 0.]
+From -0.0221105527638 to 0.00904522613065 25 points
+0
+10
+20
+Calculating F around 0.336180904523
+Using poles in: []
+From 0.320603015075 to 0.35175879397 25 points
+0
+10
+20
+Calculating F around 1.00603015075
+Using poles in: [ 1.]
+From 0.990452261307 to 1.0216080402 25 points
+0
+10
+20
+Calculating F around 2.00301507538
+Using poles in: [ 2.]
+From 1.98743718593 to 2.01859296482 25 points
+0
+10
+20
+-------------------------------
+--- Evaluating findspec.py ---
+Solution found at 290.301 MeV
+Solution found at 401.528 MeV
+Solution found at 556.759 MeV
+Solution found at 729.685 MeV
+-------------------------------
+--- Modifying configuration file ---
+L = 5.5 fm
+-------------------------------
+----- Loop 3 out of 13 --------
+-------------------------------
+-------------------------------
+--- Evaluating zdlm.py ---
+Lattice size: 5.5 fm
+Z function with (l,m) = (0,0)
+ d = [0, 0, 0]
+Shells (nmax) = 8
+From -0.1 to 3.0 200 points
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+110
+120
+130
+140
+150
+160
+170
+180
+190
+../felipe/zdlm.py:217: RuntimeWarning: divide by zero encountered in divide
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+../felipe/zdlm.py:217: RuntimeWarning: invalid value encountered in multiply
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+-------------------------------
+--- Evaluating quicklook.py ---
+quicklook.py:83: RuntimeWarning: invalid value encountered in multiply
+  value = firs_fact*zdlm
+Guesses found: 4
+-------------------------------
+--- Evaluating fzdlm_g.py ---
+F function with (l,m) = (0,0)
+ d = [0, 0, 0]
+4 guesses.
+Calculating F around -0.00653266331658
+Using poles in: [ 0.]
+From -0.0221105527638 to 0.00904522613065 25 points
+0
+10
+20
+Calculating F around 0.367336683417
+Using poles in: []
+From 0.35175879397 to 0.382914572864 25 points
+0
+10
+20
+Calculating F around 1.00603015075
+Using poles in: [ 1.]
+From 0.990452261307 to 1.0216080402 25 points
+0
+10
+20
+Calculating F around 2.00301507538
+Using poles in: [ 2.]
+From 1.98743718593 to 2.01859296482 25 points
+0
+10
+20
+-------------------------------
+--- Evaluating findspec.py ---
+Solution found at 290.519 MeV
+Solution found at 401.127 MeV
+Solution found at 538.720 MeV
+Solution found at 702.006 MeV
+-------------------------------
+--- Modifying configuration file ---
+L = 5.75 fm
+-------------------------------
+----- Loop 4 out of 13 --------
+-------------------------------
+-------------------------------
+--- Evaluating zdlm.py ---
+Lattice size: 5.75 fm
+Z function with (l,m) = (0,0)
+ d = [0, 0, 0]
+Shells (nmax) = 8
+From -0.1 to 3.0 200 points
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+110
+120
+130
+140
+150
+160
+170
+180
+190
+../felipe/zdlm.py:217: RuntimeWarning: divide by zero encountered in divide
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+../felipe/zdlm.py:217: RuntimeWarning: invalid value encountered in multiply
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+-------------------------------
+--- Evaluating quicklook.py ---
+quicklook.py:83: RuntimeWarning: invalid value encountered in multiply
+  value = firs_fact*zdlm
+Guesses found: 4
+-------------------------------
+--- Evaluating fzdlm_g.py ---
+F function with (l,m) = (0,0)
+ d = [0, 0, 0]
+4 guesses.
+Calculating F around -0.00653266331658
+Using poles in: [ 0.]
+From -0.0221105527638 to 0.00904522613065 25 points
+0
+10
+20
+Calculating F around 0.398492462312
+Using poles in: []
+From 0.382914572864 to 0.414070351759 25 points
+0
+10
+20
+Calculating F around 1.00603015075
+Using poles in: [ 1.]
+From 0.990452261307 to 1.0216080402 25 points
+0
+10
+20
+Calculating F around 2.01859296482
+Using poles in: [ 2.]
+From 2.00301507538 to 2.03417085427 25 points
+0
+10
+20
+-------------------------------
+--- Evaluating findspec.py ---
+Solution found at 290.701 MeV
+Solution found at 400.740 MeV
+Solution found at 522.489 MeV
+^C^C^C^C
+Traceback (most recent call last):
+  File "findspec.py", line 177, in <module>
+    fig.savefig(save_folder + figname)
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/matplotlib/figure.py", line 1572, in savefig
+    self.canvas.print_figure(*args, **kwargs)
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/matplotlib/backend_bases.py", line 2244, in print_figure
+    **kwargs)
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/matplotlib/backends/backend_pdf.py", line 2525, in print_pdf
+    self.figure.draw(renderer)
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/matplotlib/artist.py", line 63, in draw_wrapper
+    draw(artist, renderer, *args, **kwargs)
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/matplotlib/figure.py", line 1143, in draw
+    renderer, self, dsu, self.suppressComposite)
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/matplotlib/image.py", line 139, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/matplotlib/artist.py", line 63, in draw_wrapper
+    draw(artist, renderer, *args, **kwargs)
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/matplotlib/axes/_base.py", line 2409, in draw
+    mimage._draw_list_compositing_images(renderer, self, dsu)
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/matplotlib/image.py", line 139, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/matplotlib/artist.py", line 63, in draw_wrapper
+    draw(artist, renderer, *args, **kwargs)
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/matplotlib/axis.py", line 1138, in draw
+    renderer)
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/matplotlib/axis.py", line 1078, in _get_tick_bboxes
+    extent = tick.label1.get_window_extent(renderer)
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/matplotlib/text.py", line 967, in get_window_extent
+    bbox, info, descent = self._get_layout(self._renderer)
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/matplotlib/text.py", line 362, in _get_layout
+    ismath=ismath)
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/matplotlib/backends/backend_pdf.py", line 2082, in get_text_width_height_descent
+    renderer=self)
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/matplotlib/texmanager.py", line 676, in get_text_width_height_descent
+    dvifile = self.make_dvi(tex, fontsize)
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/matplotlib/texmanager.py", line 423, in make_dvi
+    report))
+RuntimeError: LaTeX was not able to process the following string:
+'$94200$'
+Here is the full report generated by LaTeX: 
+
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=latex)
+ restricted \write18 enabled.
+entering extended mode
+(./6d331544f9fdb4c0c1e1224129b0d284.tex
+LaTeX2e <2016/03/31>
+Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/size10.clo))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/type1cm/type1cm.sty)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/textcomp.sty
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1enc.def))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifpdf.sty)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifvtex.sty)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/ifxetex/ifxetex.sty)
+
+Package geometry Warning: Over-specification in `h'-direction.
+    `width' (5058.9pt) is ignored.
+
+
+Package geometry Warning: Over-specification in `v'-direction.
+    `height' (5058.9pt) is ignored.
+
+)
+No file 6d331544f9fdb4c0c1e1224129b0d284.aux.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd)
+*geometry* driver: auto-detecting
+*geometry* detected driver: dvips
+! Interruption.
+extract@font ...ont font@name external@font relax 
+                                                  font@name relax csname f@e...
+l.12 \fontsize{12.000000}{15.000000}{\rmfamily $9
+                                                 4200$}
+? [1] (./6d331544f9fdb4c0c1e1224129b0d284.aux) )
+Output written on 6d331544f9fdb4c0c1e1224129b0d284.dvi (1 page, 244 bytes).
+Transcript written on 6d331544f9fdb4c0c1e1224129b0d284.log.
+
+
+-------------------------------
+--- Modifying configuration file ---
+L = 6.0 fm
+-------------------------------
+----- Loop 5 out of 13 --------
+-------------------------------
+-------------------------------
+--- Evaluating zdlm.py ---
+^CTraceback (most recent call last):
+  File "../felipe/zdlm.py", line 6, in <module>
+    import numpy as np
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/numpy/__init__.py", line 166, in <module>
+    from . import random
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/numpy/random/__init__.py", line 99, in <module>
+    from .mtrand import *
+  File "mtrand.pyx", line 638, in init mtrand (numpy/random/mtrand/mtrand.c:43014)
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/numpy/core/getlimits.py", line 250, in __init__
+    def __init__(self, int_type):
+KeyboardInterrupt
+^C
+Script done on Fri Jul  7 19:36:44 2017

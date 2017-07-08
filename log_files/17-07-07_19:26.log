@@ -1,0 +1,958 @@
+Script started on Fri Jul  7 19:26:59 2017
+command: sh run.sh
+------- BEGIN SPECTRUM CALCULATION --------
+-------------------------------
+--- Modifying configuration file ---
+L = 5.0 fm
+-------------------------------
+----- Loop 1 out of 13 --------
+-------------------------------
+-------------------------------
+--- Evaluating zdlm.py ---
+Lattice size: 5.0 fm
+Z function with (l,m) = (0,0)
+ d = [0, 0, 0]
+Shells (nmax) = 8
+From -0.1 to 3.0 200 points
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+110
+120
+130
+140
+150
+160
+170
+180
+190
+../felipe/zdlm.py:217: RuntimeWarning: divide by zero encountered in divide
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+../felipe/zdlm.py:217: RuntimeWarning: invalid value encountered in multiply
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+-------------------------------
+--- Evaluating quicklook.py ---
+quicklook.py:83: RuntimeWarning: invalid value encountered in multiply
+  value = firs_fact*zdlm
+Guesses found: 4
+-------------------------------
+--- Evaluating fzdlm_g.py ---
+F function with (l,m) = (0,0)
+ d = [0, 0, 0]
+Traceback (most recent call last):
+  File "fzdlm_g.py", line 231, in <module>
+    guesses = np.load(guessfolder+filename+'.npy')
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/numpy/lib/npyio.py", line 370, in load
+    fid = open(file, "rb")
+IOError: [Errno 2] No such file or directory: '../spectrum_g1/m_400/Guess_E_2017-06-30/L_5.0_0_0_d([0, 0, 0]).npy'
+-------------------------------
+--- Evaluating findspec.py ---
+Traceback (most recent call last):
+  File "findspec.py", line 72, in <module>
+    guesses = np.load(guessfolder+filename+'.npy')
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/numpy/lib/npyio.py", line 370, in load
+    fid = open(file, "rb")
+IOError: [Errno 2] No such file or directory: '../spectrum_g1/m_400/Guess_E_2017-06-30/L_5.0_0_0_d([0, 0, 0]).npy'
+-------------------------------
+--- Modifying configuration file ---
+L = 5.25 fm
+-------------------------------
+----- Loop 2 out of 13 --------
+-------------------------------
+-------------------------------
+--- Evaluating zdlm.py ---
+Lattice size: 5.25 fm
+Z function with (l,m) = (0,0)
+ d = [0, 0, 0]
+Shells (nmax) = 8
+From -0.1 to 3.0 200 points
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+110
+120
+130
+140
+150
+160
+170
+180
+190
+../felipe/zdlm.py:217: RuntimeWarning: divide by zero encountered in divide
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+../felipe/zdlm.py:217: RuntimeWarning: invalid value encountered in multiply
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+-------------------------------
+--- Evaluating quicklook.py ---
+quicklook.py:83: RuntimeWarning: invalid value encountered in multiply
+  value = firs_fact*zdlm
+Guesses found: 4
+-------------------------------
+--- Evaluating fzdlm_g.py ---
+F function with (l,m) = (0,0)
+ d = [0, 0, 0]
+Traceback (most recent call last):
+  File "fzdlm_g.py", line 231, in <module>
+    guesses = np.load(guessfolder+filename+'.npy')
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/numpy/lib/npyio.py", line 370, in load
+    fid = open(file, "rb")
+IOError: [Errno 2] No such file or directory: '../spectrum_g1/m_400/Guess_E_2017-06-30/L_5.25_0_0_d([0, 0, 0]).npy'
+-------------------------------
+--- Evaluating findspec.py ---
+Traceback (most recent call last):
+  File "findspec.py", line 72, in <module>
+    guesses = np.load(guessfolder+filename+'.npy')
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/numpy/lib/npyio.py", line 370, in load
+    fid = open(file, "rb")
+IOError: [Errno 2] No such file or directory: '../spectrum_g1/m_400/Guess_E_2017-06-30/L_5.25_0_0_d([0, 0, 0]).npy'
+-------------------------------
+--- Modifying configuration file ---
+L = 5.5 fm
+-------------------------------
+----- Loop 3 out of 13 --------
+-------------------------------
+-------------------------------
+--- Evaluating zdlm.py ---
+Lattice size: 5.5 fm
+Z function with (l,m) = (0,0)
+ d = [0, 0, 0]
+Shells (nmax) = 8
+From -0.1 to 3.0 200 points
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+110
+120
+130
+140
+150
+160
+170
+180
+190
+../felipe/zdlm.py:217: RuntimeWarning: divide by zero encountered in divide
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+../felipe/zdlm.py:217: RuntimeWarning: invalid value encountered in multiply
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+-------------------------------
+--- Evaluating quicklook.py ---
+quicklook.py:83: RuntimeWarning: invalid value encountered in multiply
+  value = firs_fact*zdlm
+Guesses found: 4
+-------------------------------
+--- Evaluating fzdlm_g.py ---
+F function with (l,m) = (0,0)
+ d = [0, 0, 0]
+4 guesses.
+Calculating F around -0.00653266331658
+Using poles in: [ 0.]
+From -0.0221105527638 to 0.00904522613065 25 points
+0
+10
+20
+Calculating F around 0.367336683417
+Using poles in: []
+From 0.35175879397 to 0.382914572864 25 points
+0
+10
+20
+Calculating F around 1.00603015075
+Using poles in: [ 1.]
+From 0.990452261307 to 1.0216080402 25 points
+0
+10
+20
+Calculating F around 2.00301507538
+Using poles in: [ 2.]
+From 1.98743718593 to 2.01859296482 25 points
+0
+10
+20
+-------------------------------
+--- Evaluating findspec.py ---
+Solution found at 290.519 MeV
+Solution found at 401.127 MeV
+Solution found at 538.720 MeV
+Solution found at 702.006 MeV
+-------------------------------
+--- Modifying configuration file ---
+L = 5.75 fm
+-------------------------------
+----- Loop 4 out of 13 --------
+-------------------------------
+-------------------------------
+--- Evaluating zdlm.py ---
+Lattice size: 5.75 fm
+Z function with (l,m) = (0,0)
+ d = [0, 0, 0]
+Shells (nmax) = 8
+From -0.1 to 3.0 200 points
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+110
+120
+130
+140
+150
+160
+170
+180
+190
+../felipe/zdlm.py:217: RuntimeWarning: divide by zero encountered in divide
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+../felipe/zdlm.py:217: RuntimeWarning: invalid value encountered in multiply
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+-------------------------------
+--- Evaluating quicklook.py ---
+quicklook.py:83: RuntimeWarning: invalid value encountered in multiply
+  value = firs_fact*zdlm
+Guesses found: 4
+-------------------------------
+--- Evaluating fzdlm_g.py ---
+F function with (l,m) = (0,0)
+ d = [0, 0, 0]
+4 guesses.
+Calculating F around -0.00653266331658
+Using poles in: [ 0.]
+From -0.0221105527638 to 0.00904522613065 25 points
+0
+10
+20
+Calculating F around 0.398492462312
+Using poles in: []
+From 0.382914572864 to 0.414070351759 25 points
+0
+10
+20
+Calculating F around 1.00603015075
+Using poles in: [ 1.]
+From 0.990452261307 to 1.0216080402 25 points
+0
+10
+20
+Calculating F around 2.01859296482
+Using poles in: [ 2.]
+From 2.00301507538 to 2.03417085427 25 points
+0
+10
+20
+-------------------------------
+--- Evaluating findspec.py ---
+Solution found at 290.701 MeV
+Solution found at 400.740 MeV
+Solution found at 522.489 MeV
+Solution found at 676.937 MeV
+-------------------------------
+--- Modifying configuration file ---
+L = 6.0 fm
+-------------------------------
+----- Loop 5 out of 13 --------
+-------------------------------
+-------------------------------
+--- Evaluating zdlm.py ---
+Lattice size: 6.0 fm
+Z function with (l,m) = (0,0)
+ d = [0, 0, 0]
+Shells (nmax) = 8
+From -0.1 to 3.0 200 points
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+110
+120
+130
+140
+150
+160
+170
+180
+190
+../felipe/zdlm.py:217: RuntimeWarning: divide by zero encountered in divide
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+../felipe/zdlm.py:217: RuntimeWarning: invalid value encountered in multiply
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+-------------------------------
+--- Evaluating quicklook.py ---
+quicklook.py:83: RuntimeWarning: invalid value encountered in multiply
+  value = firs_fact*zdlm
+Guesses found: 4
+-------------------------------
+--- Evaluating fzdlm_g.py ---
+F function with (l,m) = (0,0)
+ d = [0, 0, 0]
+4 guesses.
+Calculating F around -0.00653266331658
+Using poles in: [ 0.]
+From -0.0221105527638 to 0.00904522613065 25 points
+0
+10
+20
+Calculating F around 0.445226130653
+Using poles in: []
+From 0.429648241206 to 0.460804020101 25 points
+0
+10
+20
+Calculating F around 1.0216080402
+Using poles in: [ 1.]
+From 1.00603015075 to 1.03718592965 25 points
+0
+10
+20
+Calculating F around 2.01859296482
+Using poles in: [ 2.]
+From 2.00301507538 to 2.03417085427 25 points
+0
+10
+20
+-------------------------------
+--- Evaluating findspec.py ---
+Solution found at 290.854 MeV
+Solution found at 400.361 MeV
+Solution found at 507.838 MeV
+Solution found at 654.146 MeV
+-------------------------------
+--- Modifying configuration file ---
+L = 6.25 fm
+-------------------------------
+----- Loop 6 out of 13 --------
+-------------------------------
+-------------------------------
+--- Evaluating zdlm.py ---
+Lattice size: 6.25 fm
+Z function with (l,m) = (0,0)
+ d = [0, 0, 0]
+Shells (nmax) = 8
+From -0.1 to 3.0 200 points
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+110
+120
+130
+140
+150
+160
+170
+180
+190
+../felipe/zdlm.py:217: RuntimeWarning: divide by zero encountered in divide
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+../felipe/zdlm.py:217: RuntimeWarning: invalid value encountered in multiply
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+-------------------------------
+--- Evaluating quicklook.py ---
+quicklook.py:83: RuntimeWarning: invalid value encountered in multiply
+  value = firs_fact*zdlm
+Guesses found: 4
+-------------------------------
+--- Evaluating fzdlm_g.py ---
+F function with (l,m) = (0,0)
+ d = [0, 0, 0]
+4 guesses.
+Calculating F around -0.00653266331658
+Using poles in: [ 0.]
+From -0.0221105527638 to 0.00904522613065 25 points
+0
+10
+20
+Calculating F around 0.476381909548
+Using poles in: []
+From 0.460804020101 to 0.491959798995 25 points
+0
+10
+20
+Calculating F around 1.0216080402
+Using poles in: [ 1.]
+From 1.00603015075 to 1.03718592965 25 points
+0
+10
+20
+Calculating F around 2.01859296482
+Using poles in: [ 2.]
+From 2.00301507538 to 2.03417085427 25 points
+0
+10
+20
+-------------------------------
+--- Evaluating findspec.py ---
+Solution found at 290.985 MeV
+Solution found at 399.981 MeV
+Solution found at 494.574 MeV
+Solution found at 633.358 MeV
+-------------------------------
+--- Modifying configuration file ---
+L = 6.5 fm
+-------------------------------
+----- Loop 7 out of 13 --------
+-------------------------------
+-------------------------------
+--- Evaluating zdlm.py ---
+Lattice size: 6.5 fm
+Z function with (l,m) = (0,0)
+ d = [0, 0, 0]
+Shells (nmax) = 8
+From -0.1 to 3.0 200 points
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+110
+120
+130
+140
+150
+160
+170
+180
+190
+../felipe/zdlm.py:217: RuntimeWarning: divide by zero encountered in divide
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+../felipe/zdlm.py:217: RuntimeWarning: invalid value encountered in multiply
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+-------------------------------
+--- Evaluating quicklook.py ---
+quicklook.py:83: RuntimeWarning: invalid value encountered in multiply
+  value = firs_fact*zdlm
+Guesses found: 4
+-------------------------------
+--- Evaluating fzdlm_g.py ---
+F function with (l,m) = (0,0)
+ d = [0, 0, 0]
+4 guesses.
+Calculating F around -0.00653266331658
+Using poles in: [ 0.]
+From -0.0221105527638 to 0.00904522613065 25 points
+0
+10
+20
+Calculating F around 0.507537688442
+Using poles in: []
+From 0.491959798995 to 0.523115577889 25 points
+0
+10
+20
+Calculating F around 1.0216080402
+Using poles in: [ 1.]
+From 1.00603015075 to 1.03718592965 25 points
+0
+10
+20
+Calculating F around 2.01859296482
+Using poles in: [ 2.]
+From 2.00301507538 to 2.03417085427 25 points
+0
+10
+20
+-------------------------------
+--- Evaluating findspec.py ---
+Solution found at 291.096 MeV
+Solution found at 399.593 MeV
+Solution found at 482.535 MeV
+Solution found at 614.336 MeV
+-------------------------------
+--- Modifying configuration file ---
+L = 6.75 fm
+-------------------------------
+----- Loop 8 out of 13 --------
+-------------------------------
+-------------------------------
+--- Evaluating zdlm.py ---
+Lattice size: 6.75 fm
+Z function with (l,m) = (0,0)
+ d = [0, 0, 0]
+Shells (nmax) = 8
+From -0.1 to 3.0 200 points
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+110
+120
+130
+140
+150
+160
+170
+180
+190
+../felipe/zdlm.py:217: RuntimeWarning: divide by zero encountered in divide
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+../felipe/zdlm.py:217: RuntimeWarning: invalid value encountered in multiply
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+-------------------------------
+--- Evaluating quicklook.py ---
+quicklook.py:83: RuntimeWarning: invalid value encountered in multiply
+  value = firs_fact*zdlm
+Guesses found: 4
+-------------------------------
+--- Evaluating fzdlm_g.py ---
+F function with (l,m) = (0,0)
+ d = [0, 0, 0]
+4 guesses.
+Calculating F around -0.00653266331658
+Using poles in: [ 0.]
+From -0.0221105527638 to 0.00904522613065 25 points
+0
+10
+20
+Calculating F around 0.554271356784
+Using poles in: []
+From 0.538693467337 to 0.569849246231 25 points
+0
+10
+20
+Calculating F around 1.0216080402
+Using poles in: [ 1.]
+From 1.00603015075 to 1.03718592965 25 points
+0
+10
+20
+Calculating F around 2.01859296482
+Using poles in: [ 2.]
+From 2.00301507538 to 2.03417085427 25 points
+0
+10
+20
+-------------------------------
+--- Evaluating findspec.py ---
+Solution found at 291.192 MeV
+Solution found at 399.187 MeV
+Solution found at 471.589 MeV
+Solution found at 596.881 MeV
+-------------------------------
+--- Modifying configuration file ---
+L = 7.0 fm
+-------------------------------
+----- Loop 9 out of 13 --------
+-------------------------------
+-------------------------------
+--- Evaluating zdlm.py ---
+Lattice size: 7.0 fm
+Z function with (l,m) = (0,0)
+ d = [0, 0, 0]
+Shells (nmax) = 8
+From -0.1 to 3.0 200 points
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+110
+120
+130
+140
+150
+160
+170
+180
+190
+../felipe/zdlm.py:217: RuntimeWarning: divide by zero encountered in divide
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+../felipe/zdlm.py:217: RuntimeWarning: invalid value encountered in multiply
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+-------------------------------
+--- Evaluating quicklook.py ---
+quicklook.py:83: RuntimeWarning: invalid value encountered in multiply
+  value = firs_fact*zdlm
+Guesses found: 4
+-------------------------------
+--- Evaluating fzdlm_g.py ---
+F function with (l,m) = (0,0)
+ d = [0, 0, 0]
+4 guesses.
+Calculating F around -0.00653266331658
+Using poles in: [ 0.]
+From -0.0221105527638 to 0.00904522613065 25 points
+0
+10
+20
+Calculating F around 0.585427135678
+Using poles in: []
+From 0.569849246231 to 0.601005025126 25 points
+0
+10
+20
+Calculating F around 1.0216080402
+Using poles in: [ 1.]
+From 1.00603015075 to 1.03718592965 25 points
+0
+10
+20
+Calculating F around 2.01859296482
+Using poles in: [ 2.]
+From 2.00301507538 to 2.03417085427 25 points
+0
+10
+20
+-------------------------------
+--- Evaluating findspec.py ---
+Solution found at 291.274 MeV
+Solution found at 398.753 MeV
+Solution found at 461.623 MeV
+Solution found at 580.822 MeV
+-------------------------------
+--- Modifying configuration file ---
+L = 7.25 fm
+-------------------------------
+----- Loop 10 out of 13 --------
+-------------------------------
+-------------------------------
+--- Evaluating zdlm.py ---
+Lattice size: 7.25 fm
+Z function with (l,m) = (0,0)
+ d = [0, 0, 0]
+Shells (nmax) = 8
+From -0.1 to 3.0 200 points
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+110
+120
+130
+140
+150
+160
+170
+180
+190
+../felipe/zdlm.py:217: RuntimeWarning: divide by zero encountered in divide
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+../felipe/zdlm.py:217: RuntimeWarning: invalid value encountered in multiply
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+-------------------------------
+--- Evaluating quicklook.py ---
+quicklook.py:83: RuntimeWarning: invalid value encountered in multiply
+  value = firs_fact*zdlm
+Guesses found: 4
+-------------------------------
+--- Evaluating fzdlm_g.py ---
+F function with (l,m) = (0,0)
+ d = [0, 0, 0]
+4 guesses.
+Calculating F around -0.00653266331658
+Using poles in: [ 0.]
+From -0.0221105527638 to 0.00904522613065 25 points
+0
+10
+20
+Calculating F around 0.63216080402
+Using poles in: []
+From 0.616582914573 to 0.647738693467 25 points
+0
+10
+20
+Calculating F around 1.0216080402
+Using poles in: [ 1.]
+From 1.00603015075 to 1.03718592965 25 points
+0
+10
+20
+Calculating F around 2.01859296482
+Using poles in: [ 2.]
+From 2.00301507538 to 2.03417085427 25 points
+0
+10
+20
+-------------------------------
+--- Evaluating findspec.py ---
+Solution found at 291.346 MeV
+Solution found at 398.275 MeV
+Solution found at 452.546 MeV
+Solution found at 566.011 MeV
+-------------------------------
+--- Modifying configuration file ---
+L = 7.5 fm
+-------------------------------
+----- Loop 11 out of 13 --------
+-------------------------------
+-------------------------------
+--- Evaluating zdlm.py ---
+Lattice size: 7.5 fm
+Z function with (l,m) = (0,0)
+ d = [0, 0, 0]
+Shells (nmax) = 8
+From -0.1 to 3.0 200 points
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+110
+120
+130
+140
+150
+160
+170
+180
+190
+../felipe/zdlm.py:217: RuntimeWarning: divide by zero encountered in divide
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+../felipe/zdlm.py:217: RuntimeWarning: invalid value encountered in multiply
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+-------------------------------
+--- Evaluating quicklook.py ---
+quicklook.py:83: RuntimeWarning: invalid value encountered in multiply
+  value = firs_fact*zdlm
+Guesses found: 4
+-------------------------------
+--- Evaluating fzdlm_g.py ---
+F function with (l,m) = (0,0)
+ d = [0, 0, 0]
+4 guesses.
+Calculating F around -0.00653266331658
+Using poles in: [ 0.]
+From -0.0221105527638 to 0.00904522613065 25 points
+0
+10
+20
+Calculating F around 0.663316582915
+Using poles in: []
+From 0.647738693467 to 0.678894472362 25 points
+0
+10
+20
+Calculating F around 1.0216080402
+Using poles in: [ 1.]
+From 1.00603015075 to 1.03718592965 25 points
+0
+10
+20
+Calculating F around 2.01859296482
+Using poles in: [ 2.]
+From 2.00301507538 to 2.03417085427 25 points
+0
+10
+20
+-------------------------------
+--- Evaluating findspec.py ---
+Solution found at 291.408 MeV
+Solution found at 397.734 MeV
+Solution found at 444.287 MeV
+Solution found at 552.321 MeV
+-------------------------------
+--- Modifying configuration file ---
+L = 7.75 fm
+-------------------------------
+----- Loop 12 out of 13 --------
+-------------------------------
+-------------------------------
+--- Evaluating zdlm.py ---
+Lattice size: 7.75 fm
+Z function with (l,m) = (0,0)
+ d = [0, 0, 0]
+Shells (nmax) = 8
+From -0.1 to 3.0 200 points
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+110
+120
+130
+140
+150
+160
+170
+180
+190
+../felipe/zdlm.py:217: RuntimeWarning: divide by zero encountered in divide
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+../felipe/zdlm.py:217: RuntimeWarning: invalid value encountered in multiply
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+-------------------------------
+--- Evaluating quicklook.py ---
+quicklook.py:83: RuntimeWarning: invalid value encountered in multiply
+  value = firs_fact*zdlm
+Guesses found: 4
+-------------------------------
+--- Evaluating fzdlm_g.py ---
+F function with (l,m) = (0,0)
+ d = [0, 0, 0]
+4 guesses.
+Calculating F around -0.00653266331658
+Using poles in: [ 0.]
+From -0.0221105527638 to 0.00904522613065 25 points
+0
+10
+20
+Calculating F around 0.710050251256
+Using poles in: []
+From 0.694472361809 to 0.725628140704 25 points
+0
+10
+20
+Calculating F around 1.03718592965
+Using poles in: []
+From 1.0216080402 to 1.0527638191 25 points
+0
+10
+20
+Calculating F around 2.01859296482
+Using poles in: [ 2.]
+From 2.00301507538 to 2.03417085427 25 points
+0
+10
+20
+-------------------------------
+--- Evaluating findspec.py ---
+Solution found at 291.463 MeV
+Solution found at 397.102 MeV
+Solution found at 436.793 MeV
+Solution found at 539.640 MeV
+-------------------------------
+--- Modifying configuration file ---
+L = 8.0 fm
+-------------------------------
+----- Loop 13 out of 13 --------
+-------------------------------
+-------------------------------
+--- Evaluating zdlm.py ---
+Lattice size: 8.0 fm
+Z function with (l,m) = (0,0)
+ d = [0, 0, 0]
+Shells (nmax) = 8
+From -0.1 to 3.0 200 points
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+110
+120
+130
+140
+150
+160
+170
+180
+190
+../felipe/zdlm.py:217: RuntimeWarning: divide by zero encountered in divide
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+../felipe/zdlm.py:217: RuntimeWarning: invalid value encountered in multiply
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+-------------------------------
+--- Evaluating quicklook.py ---
+quicklook.py:83: RuntimeWarning: invalid value encountered in multiply
+  value = firs_fact*zdlm
+Guesses found: 4
+-------------------------------
+--- Evaluating fzdlm_g.py ---
+F function with (l,m) = (0,0)
+ d = [0, 0, 0]
+Traceback (most recent call last):
+  File "fzdlm_g.py", line 231, in <module>
+    guesses = np.load(guessfolder+filename+'.npy')
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/numpy/lib/npyio.py", line 370, in load
+    fid = open(file, "rb")
+IOError: [Errno 2] No such file or directory: '../spectrum_g1/m_400/Guess_E_2017-06-30/L_8.0_0_0_d([0, 0, 0]).npy'
+-------------------------------
+--- Evaluating findspec.py ---
+Traceback (most recent call last):
+  File "findspec.py", line 72, in <module>
+    guesses = np.load(guessfolder+filename+'.npy')
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/numpy/lib/npyio.py", line 370, in load
+    fid = open(file, "rb")
+IOError: [Errno 2] No such file or directory: '../spectrum_g1/m_400/Guess_E_2017-06-30/L_8.0_0_0_d([0, 0, 0]).npy'
+-----LOOPS COMPLETED---------
+-------------------------------
+--- Evaluating final_plot.py ---
+
+Script done on Fri Jul  7 19:33:05 2017

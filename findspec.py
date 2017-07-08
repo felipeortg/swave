@@ -13,32 +13,32 @@ sd = False
 
 with open(config_file, 'r') as f:
 	for line in f:
-		if line[0:6] == 'folder':
+		if line[0:7] == 'folder ':
 			folder = line[7:-1]
-		if line[0] == 'L':
-			L_lattice_size = float(line[2:]) # fermis
-		if line[0] == 'l':
+		if line[0:2] == 'l ':
 			l = int(line[2:])
-		if line[0] == 'm':
+		if line[0:2] == 'm ':
 			m = int(line[2:])
-		if line[0:2] == 'dx':
+		if line[0:3] == 'dx ':
 			dx = int(line[2:])
-		if line[0:2] == 'dy':
+		if line[0:3] == 'dy ':
 			dy = int(line[2:])
-		if line[0:2] == 'dz':
+		if line[0:3] == 'dz ':
 			dz = int(line[2:])
-		if line[0:5] == 'x2max':
+		if line[0:2] == 'L ':
+			L_lattice_size = float(line[2:]) # fermis
+		if line[0:6] == 'x2max ':
 			x2max = float(line[6:])
-		if line[0:5] == 'x2min':
+		if line[0:6] == 'x2min ':
 			x2min = float(line[6:])
-		if line[0:6] == 'points':
+		if line[0:7] == 'points ':
 			points = int(line[7:])
-		if line[0:2] == 'sd':
+		if line[0:3] == 'sd ':
 			sd = True
 			speci_dat = str(line[3:-1])
-		if line[0:2] == 'g0':
-			g0 = float(line[2:])
-		if line[0:2] == 'M0':
+		if line[0:3] == 'g0 ':
+			g0 = float(line[3:])
+		if line[0:3] == 'M0 ':
 			m0 = float(line[3:])
 			
 d = [dx,dy,dz]
@@ -145,8 +145,11 @@ for guess in guesses:
 	plt.rc('font', family='serif')
 	plt.rc('axes.formatter', useoffset = False)
 
-	x2plmax = (guess)*(L/(2*np.pi))**2 + 2 * x2spacing
-	x2plmin = (guess)*(L/(2*np.pi))**2 - 2 * x2spacing
+	# x2plmax = (guess)*(L/(2*np.pi))**2 + 2 * x2spacing
+	# x2plmin = (guess)*(L/(2*np.pi))**2 - 2 * x2spacing
+
+	x2plmin = xtoint[0]
+	x2plmax = xtoint[-1]
 	
 	# Ensure plot is inside the interpolation range
 	absdif = x2plmax-x2plmin
@@ -164,7 +167,7 @@ for guess in guesses:
 	plt.grid(True)
 	plt.xlabel(r'$p^2$')
 	cname = 'c_{' + str(l) + str(m)+ '}^{' + str(d) +'}'
-	plt.legend(['$4\pi '+ cname + '\prod (q^2-q_0)$', '$p\cot\delta_{S}\prod (q^2-q_0)$'], loc='lower right')
+	plt.legend(['$4\pi '+ cname + '\prod (q^2-q_0)$', '$p\cot\delta_{S}\prod (p^2-p_0)$'], loc='lower right')
 	#plt.show()
 
 	filename = 'L_'+ str(L_lattice_size) +'_'+ str(l) +'_' + str(m)+ '_d(' + str(d) +')_guess(%.1f)'%guess

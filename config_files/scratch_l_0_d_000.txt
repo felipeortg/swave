@@ -16,16 +16,19 @@
 
 folder scratch/
 cube num 20
-#sd 2017-06-21
-L 5.5
+#sd 2017-06-29
+L 8.0
 l 0
 m 0
 dx 0
 dy 0
 dz 0
 x2min -0.1
-x2max 0.1
-points 10
-g0 0.1
+x2max 1
+points 65
+g0 1
 M0 500
+LMIN 5.0
+LMAX 8.0
+
 

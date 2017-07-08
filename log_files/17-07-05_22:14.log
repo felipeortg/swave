@@ -1,0 +1,129 @@
+Script started on Wed Jul  5 22:14:42 2017
+command: sh run.sh
+------- BEGIN SPECTRUM CALCULATION --------
+-------------------------------
+--- Modifying configuration file ---
+L = 5.0 fm
+-------------------------------
+----- Loop 1 out of 2 --------
+-------------------------------
+-------------------------------
+--- Evaluating zdlm.py ---
+Lattice size: 5.0 fm
+Z function with (l,m) = (0,0)
+ d = [0, 0, 0]
+Shells (nmax) = 20
+From -0.1 to 1.0 65 points
+0
+10
+20
+30
+40
+50
+60
+../felipe/zdlm.py:217: RuntimeWarning: divide by zero encountered in divide
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+../felipe/zdlm.py:217: RuntimeWarning: invalid value encountered in multiply
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+-------------------------------
+--- Evaluating quicklook.py ---
+quicklook.py:83: RuntimeWarning: invalid value encountered in multiply
+  value = firs_fact*zdlm
+quicklook.py:97: RuntimeWarning: invalid value encountered in absolute
+  return np.abs(np.real(4*np.pi*cdlm(0,x2,zdlm))-pcotd(q2))
+Guesses found: 2
+-------------------------------
+--- Evaluating fzdlm_g.py ---
+F function with (l,m) = (0,0)
+ d = [0, 0, 0]
+2 guesses.
+Calculating F around -0.0140625
+Using poles in: [ 0.]
+From -0.03125 to 0.003125 25 points
+0
+10
+20
+Calculating F around 0.65625
+Using poles in: []
+From 0.6390625 to 0.6734375 25 points
+0
+10
+20
+-------------------------------
+--- Evaluating findspec.py ---
+Traceback (most recent call last):
+  File "findspec.py", line 161, in <module>
+    plt.plot(q2, 4*np.pi*cfdlm(0,q2),'-',q2,pcotdf(q2),'-')
+  File "findspec.py", line 86, in cfdlm
+    value = firs_fact*fdlm(x2)
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/scipy/interpolate/polyint.py", line 79, in __call__
+    y = self._evaluate(x)
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/scipy/interpolate/interpolate.py", line 610, in _evaluate
+    below_bounds, above_bounds = self._check_bounds(x_new)
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/scipy/interpolate/interpolate.py", line 639, in _check_bounds
+    raise ValueError("A value in x_new is below the interpolation "
+ValueError: A value in x_new is below the interpolation range.
+-------------------------------
+--- Modifying configuration file ---
+L = 5.25 fm
+-------------------------------
+----- Loop 2 out of 2 --------
+-------------------------------
+-------------------------------
+--- Evaluating zdlm.py ---
+Lattice size: 5.25 fm
+Z function with (l,m) = (0,0)
+ d = [0, 0, 0]
+Shells (nmax) = 20
+From -0.1 to 1.0 65 points
+0
+10
+20
+30
+40
+50
+60
+../felipe/zdlm.py:217: RuntimeWarning: divide by zero encountered in divide
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+../felipe/zdlm.py:217: RuntimeWarning: invalid value encountered in multiply
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+-------------------------------
+--- Evaluating quicklook.py ---
+quicklook.py:83: RuntimeWarning: invalid value encountered in multiply
+  value = firs_fact*zdlm
+quicklook.py:97: RuntimeWarning: invalid value encountered in absolute
+  return np.abs(np.real(4*np.pi*cdlm(0,x2,zdlm))-pcotd(q2))
+Guesses found: 2
+-------------------------------
+--- Evaluating fzdlm_g.py ---
+F function with (l,m) = (0,0)
+ d = [0, 0, 0]
+2 guesses.
+Calculating F around -0.0140625
+Using poles in: [ 0.]
+From -0.03125 to 0.003125 25 points
+0
+10
+20
+Calculating F around 0.725
+Using poles in: []
+From 0.7078125 to 0.7421875 25 points
+0
+10
+20
+-------------------------------
+--- Evaluating findspec.py ---
+Traceback (most recent call last):
+  File "findspec.py", line 161, in <module>
+    plt.plot(q2, 4*np.pi*cfdlm(0,q2),'-',q2,pcotdf(q2),'-')
+  File "findspec.py", line 86, in cfdlm
+    value = firs_fact*fdlm(x2)
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/scipy/interpolate/polyint.py", line 79, in __call__
+    y = self._evaluate(x)
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/scipy/interpolate/interpolate.py", line 610, in _evaluate
+    below_bounds, above_bounds = self._check_bounds(x_new)
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/scipy/interpolate/interpolate.py", line 639, in _check_bounds
+    raise ValueError("A value in x_new is below the interpolation "
+ValueError: A value in x_new is below the interpolation range.
+
+Script done on Wed Jul  5 22:16:02 2017

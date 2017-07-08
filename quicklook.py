@@ -11,26 +11,26 @@ sd = False
 
 with open(config_file, 'r') as f:
 	for line in f:
-		if line[0:6] == 'folder':
+		if line[0:7] == 'folder ':
 			folder = line[7:-1]
-		if line[0] == 'L':
-			L_lattice_size = float(line[2:]) # fermis
-		if line[0] == 'l':
+		if line[0:2] == 'l ':
 			l = int(line[2:])
-		if line[0] == 'm':
+		if line[0:2] == 'm ':
 			m = int(line[2:])
-		if line[0:2] == 'dx':
+		if line[0:3] == 'dx ':
 			dx = int(line[2:])
-		if line[0:2] == 'dy':
+		if line[0:3] == 'dy ':
 			dy = int(line[2:])
-		if line[0:2] == 'dz':
+		if line[0:3] == 'dz ':
 			dz = int(line[2:])
-		if line[0:2] == 'sd':
+		if line[0:2] == 'L ':
+			L_lattice_size = float(line[2:]) # fermis
+		if line[0:3] == 'sd ':
 			sd = True
 			speci_dat = str(line[3:-1])
-		if line[0:2] == 'g0':
-			g0 = float(line[2:]) # coupling
-		if line[0:2] == 'M0':
+		if line[0:3] == 'g0 ':
+			g0 = float(line[3:]) # coupling
+		if line[0:3] == 'M0 ':
 			m0 = float(line[3:]) # MeV, Resonance mass
 
 d = [dx,dy,dz]

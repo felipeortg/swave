@@ -1,0 +1,80 @@
+Script started on Wed Jul  5 22:03:59 2017
+command: sh run.sh
+------- BEGIN SPECTRUM CALCULATION --------
+-------------------------------
+--- Modifying configuration file ---
+L = 5.0 fm
+-------------------------------
+----- Loop 1 out of 2 --------
+-------------------------------
+-------------------------------
+--- Evaluating zdlm.py ---
+Lattice size: 5.0 fm
+Z function with (l,m) = (0,0)
+ d = [0, 0, 0]
+Shells (nmax) = 20
+From -0.1 to 1.0 65 points
+0
+10
+20
+30
+40
+50
+60
+../felipe/zdlm.py:217: RuntimeWarning: divide by zero encountered in divide
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+../felipe/zdlm.py:217: RuntimeWarning: invalid value encountered in multiply
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+-------------------------------
+--- Evaluating quicklook.py ---
+Guesses found: 1
+-------------------------------
+--- Evaluating fzdlm_g.py ---
+F function with (l,m) = (0,0)
+ d = [0, 0, 0]
+Traceback (most recent call last):
+  File "fzdlm_g.py", line 224, in <module>
+    guesses = np.load(guessfolder+filename+'.npy')
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/numpy/lib/npyio.py", line 370, in load
+    fid = open(file, "rb")
+IOError: [Errno 2] No such file or directory: '../scratch/Guess_E_2017-06-29/L_5.0_0_0_d([0, 0, 0]).npy'
+-------------------------------
+--- Evaluating findspec.py ---
+Traceback (most recent call last):
+  File "findspec.py", line 72, in <module>
+    guesses = np.load(guessfolder+filename+'.npy')
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/numpy/lib/npyio.py", line 370, in load
+    fid = open(file, "rb")
+IOError: [Errno 2] No such file or directory: '../scratch/Guess_E_2017-06-29/L_5.0_0_0_d([0, 0, 0]).npy'
+-------------------------------
+--- Modifying configuration file ---
+L = 5.25 fm
+-------------------------------
+----- Loop 2 out of 2 --------
+-------------------------------
+-------------------------------
+--- Evaluating zdlm.py ---
+Lattice size: 5.25 fm
+Z function with (l,m) = (0,0)
+ d = [0, 0, 0]
+Shells (nmax) = 20
+From -0.1 to 1.0 65 points
+0
+10
+20
+30
+40
+^CTraceback (most recent call last):
+  File "../felipe/zdlm.py", line 286, in <module>
+    y[ii] = zdlm(l,m,x[ii])
+  File "../felipe/zdlm.py", line 253, in zdlm
+    third_term_r = integrate.quad(integr_third_term_r,0,1, args = (l,gw2_array,x2,coef_third_term))[0]
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/scipy/integrate/quadpack.py", line 323, in quad
+    points)
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/scipy/integrate/quadpack.py", line 388, in _quad
+    return _quadpack._qagse(func,a,b,args,full_output,epsabs,epsrel,limit)
+  File "../felipe/zdlm.py", line 79, in integr_third_term_r
+    return np.real(sum(coef*integr))
+KeyboardInterrupt
+^C
+Script done on Wed Jul  5 22:04:42 2017

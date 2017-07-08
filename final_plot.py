@@ -14,30 +14,25 @@ sd = False
 
 with open(config_file, 'r') as f:
 	for line in f:
-		if line[0:6] == 'folder':
+		if line[0:7] == 'folder ':
 			folder = line[7:-1]
-		if line[0] == 'L':
-			L_lattice_size = float(line[2:]) # fermis
-		if line[0] == 'l':
-			l = int(line[2:])
-		if line[0] == 'm':
-			m = int(line[2:])
-		if line[0:2] == 'dx':
-			dx = int(line[2:])
-		if line[0:2] == 'dy':
-			dy = int(line[2:])
-		if line[0:2] == 'dz':
-			dz = int(line[2:])
-		if line[0:5] == 'x2max':
-			x2max = float(line[6:])
-		if line[0:5] == 'x2min':
-			x2min = float(line[6:])
-		if line[0:6] == 'points':
-			points = int(line[7:])
-		if line[0:2] == 'g0':
-			g0 = float(line[2:])
-		if line[0:2] == 'M0':
+		if line[0:3] == 'dx ':
+			dx = int(line[3:])
+		if line[0:3] == 'dy ':
+			dy = int(line[3:])
+		if line[0:3] == 'dz ':
+			dz = int(line[3:])
+		if line[0:3] == 'g0 ':
+			g0 = float(line[3:])
+		if line[0:3] == 'M0 ':
 			m0 = float(line[3:])
+		if line[0:3] == 'sd ':
+			sd = True
+			speci_dat = str(line[3:-1])
+		if line[0:5] == 'LMIN ':
+			elemin = float(line[5:])
+		if line[0:5] == 'LMAX ':
+			elemax = float(line[5:])
 
 d = [dx,dy,dz]
 
@@ -46,18 +41,10 @@ I = complex(0.0,1.0)
 hbar = 197.3269718 # MeV fm when speed of ligth is 1
 
 # Define variables of the C function
-# S-wave
-# d= [0.0,0.0,0]
-# L_lattice_size = 10.0 # fermis
-# L = L_lattice_size/hbar # MeV^-1
-# lab_moment = (2*np.pi/L)*np.array(d)
-# lab_moment2 = np.dot(lab_moment,lab_moment)
+
 m1 = 146.0 # MeV
 m2 = 146.0 # MeV
-# m0 = 770.0 # MeV, Resonance mass
-# g0 = 3.0 # coupling
 
-eles = [6.0,6.5,7.0,7.5,8.0,10.0]
 
 # Matplotlib param
 plt.rc('text', usetex=True)
@@ -65,11 +52,16 @@ plt.rc('font', size=12)
 plt.rc('font', family='serif')
 plt.rc('axes.formatter', useoffset = False)
 
-specfolder = '../'+folder+'Spectrum_' + str(dt.datetime.now())[:-16] +'/'
+if sd == False:
+	specfolder = '../'+folder+'Spectrum_' + str(dt.datetime.now())[:-16] +'/'
+else:
+	specfolder = '../'+folder+'Spectrum_' + speci_dat+'/'
+
 
 fig = plt.figure()
-
+max_ener = 0
 for spectrum in os.listdir(specfolder):
+	# Avoid special files .DS or pdf
 	if spectrum[0] == '.' or spectrum[-1] == 'f':
 		continue
 
@@ -77,14 +69,44 @@ for spectrum in os.listdir(specfolder):
 
 	cm_energy_spec = np.load(specfolder+spectrum)
 
+	if max(cm_energy_spec)>max_ener:
+		max_ener = max(cm_energy_spec)
 	plt.plot(ele*np.ones(len(cm_energy_spec)), cm_energy_spec,'o',color='r')
 
-for nn in range(6):
-	free_part_en = lambda Llat: 2*np.sqrt(nn*((2*np.pi*hbar)/Llat)**2 + m1**2)
-	Lspace = np.linspace(5.5, 8, num=100)
-	plt.plot(Lspace,free_part_en(Lspace),'--',color='k')
+plt.plot([elemin,elemax],[m0,m0],'-',color='0.5')
 
-plt.plot([5.5,8],[m0,m0],'--',color='0.5')
+if np.dot(d,d)!= 0:
+	plt.plot([elemin,elemax],[m1+m2,m1+m2],'-',color='0.5')
+
+def free_part_en(Llat,ntrip):
+	conv2 = ((2*np.pi*hbar)/Llat)**2
+	n2 = d - ntrip
+	Elab = np.sqrt(m1**2+conv2*np.dot(ntrip,ntrip))+np.sqrt(m2**2+conv2*np.dot(n2,n2))
+	Ecm = np.sqrt(Elab**2-conv2*np.dot(d,d))
+	return Ecm
+
+Ecmsplot = []
+for nx in range(4):
+	for ny in range(4):
+		for nz in range(4):
+			ntri = np.array([nx,ny,nz])
+			proof =free_part_en(elemin,ntri)
+			if proof > max_ener+50:
+				continue
+			cont = False
+			for ecms in Ecmsplot:
+				# No two energies closer than 1 MeV (cuz they will be the same)
+				if np.abs(proof-ecms) < 1:
+					cont = True
+			if cont: continue
+
+			Ecmsplot.append(proof)
+
+			Lspace = np.linspace(elemin, elemax, num=100)
+			plt.plot(Lspace,free_part_en(Lspace,ntri),'--',color='k')
+
+
+
 
 plt.title(r'Spectrum with BW ($m_0$ = '+str(m0)+' MeV, $g_0$ = '+ str(g0) +')')
 

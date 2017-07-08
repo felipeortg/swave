@@ -1,0 +1,77 @@
+Script started on Wed Jul  5 22:01:12 2017
+command: sh run.sh
+------- BEGIN SPECTRUM CALCULATION --------
+-------------------------------
+--- Modifying configuration file ---
+L = 5.0 fm
+-------------------------------
+----- Loop 1 out of 2 --------
+-------------------------------
+-------------------------------
+--- Evaluating zdlm.py ---
+Lattice size: 5.0 fm
+Z function with (l,m) = (0,0)
+ d = [0, 0, 0]
+Shells (nmax) = 20
+33371
+From -0.1 to 0.1 10 points
+0
+-------------------------------
+--- Evaluating quicklook.py ---
+Guesses found: 0
+-------------------------------
+--- Evaluating fzdlm_g.py ---
+F function with (l,m) = (0,0)
+ d = [0, 0, 0]
+Traceback (most recent call last):
+  File "fzdlm_g.py", line 224, in <module>
+    guesses = np.load(guessfolder+filename+'.npy')
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/numpy/lib/npyio.py", line 370, in load
+    fid = open(file, "rb")
+IOError: [Errno 2] No such file or directory: '../scratch/Guess_E_2017-06-29/L_5.0_0_0_d([0, 0, 0]).npy'
+-------------------------------
+--- Evaluating findspec.py ---
+Traceback (most recent call last):
+  File "findspec.py", line 72, in <module>
+    guesses = np.load(guessfolder+filename+'.npy')
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/numpy/lib/npyio.py", line 370, in load
+    fid = open(file, "rb")
+IOError: [Errno 2] No such file or directory: '../scratch/Guess_E_2017-06-29/L_5.0_0_0_d([0, 0, 0]).npy'
+-------------------------------
+--- Modifying configuration file ---
+L = 5.25 fm
+-------------------------------
+----- Loop 2 out of 2 --------
+-------------------------------
+-------------------------------
+--- Evaluating zdlm.py ---
+Lattice size: 5.25 fm
+Z function with (l,m) = (0,0)
+ d = [0, 0, 0]
+Shells (nmax) = 20
+33371
+From -0.1 to 0.1 10 points
+0
+-------------------------------
+--- Evaluating quicklook.py ---
+Guesses found: 1
+-------------------------------
+--- Evaluating fzdlm_g.py ---
+F function with (l,m) = (0,0)
+ d = [0, 0, 0]
+Traceback (most recent call last):
+  File "fzdlm_g.py", line 224, in <module>
+    guesses = np.load(guessfolder+filename+'.npy')
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/numpy/lib/npyio.py", line 370, in load
+    fid = open(file, "rb")
+IOError: [Errno 2] No such file or directory: '../scratch/Guess_E_2017-06-29/L_5.25_0_0_d([0, 0, 0]).npy'
+-------------------------------
+--- Evaluating findspec.py ---
+Traceback (most recent call last):
+  File "findspec.py", line 72, in <module>
+    guesses = np.load(guessfolder+filename+'.npy')
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/numpy/lib/npyio.py", line 370, in load
+    fid = open(file, "rb")
+IOError: [Errno 2] No such file or directory: '../scratch/Guess_E_2017-06-29/L_5.25_0_0_d([0, 0, 0]).npy'
+
+Script done on Wed Jul  5 22:02:00 2017

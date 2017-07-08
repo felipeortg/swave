@@ -14,17 +14,19 @@
 #g0 0.1 (coupling)
 #M0 500 (MeV, resonance mass)
 
-folder spectrum_g1/
+folder spectrum_g1/m_285/
 cube num 20
-#sd 2017-06-21
-L 5.125
+#sd 2017-06-30
+L 8.0
 l 0
 m 0
 dx 0
 dy 0
 dz 0
 x2min -0.1
-x2max 5
-points 350
+x2max 2.1
+points 140
 g0 1
-M0 500
+LMIN 5
+LMAX 8
+M0 285

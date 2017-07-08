@@ -1,21 +1,25 @@
 import os
 import sys
 
-LMIN = 6.75
-LMAX = 8.0
-
 # -----------------
 # Config file:
 config_file = str(sys.argv[1])
 counter = float(str(sys.argv[2]))
 loops = float(str(sys.argv[3]))
 
-EL = (LMAX-LMIN)*counter/loops + LMIN
+with open(config_file, 'r') as f:
+	for line in f:
+		if line[0:5] == 'LMIN ':
+			LMIN = float(line[5:])
+		if line[0:5] == 'LMAX ':
+			LMAX = float(line[5:])
+
+EL = (LMAX-LMIN)*counter/(loops-1) + LMIN
 text = ''
 
 with open(config_file, 'r') as f:
 	for line in f:
-		if line[0] == 'L':
+		if line[0:2] == 'L ':
 			text += 'L ' + str(EL) +'\n'
 			print 'L = ' + str(EL) + ' fm'
 		else:

@@ -1,10 +1,10 @@
-CONFIG="config_files/config_g_1.txt"
+CONFIG="config_files/config_m_300.txt"
 
-COUNTER=0
-TOTAL=5
+TOTAL=2
 
 echo ------- BEGIN SPECTRUM CALCULATION --------
 
+COUNTER=0
 while [  $COUNTER -lt $TOTAL ]; do
 
 	
@@ -41,5 +41,9 @@ while [  $COUNTER -lt $TOTAL ]; do
 	python findspec.py $CONFIG
 
 done
+
+echo -----LOOPS COMPLETED---------
+echo -------------------------------
+echo --- Evaluating 'final_plot.py' ---
 
 python final_plot.py $CONFIG

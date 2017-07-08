@@ -1,0 +1,466 @@
+Script started on Fri Jul  7 12:49:48 2017
+command: sh run.sh
+------- BEGIN SPECTRUM CALCULATION --------
+-------------------------------
+--- Modifying configuration file ---
+L = 5.0 fm
+-------------------------------
+----- Loop 1 out of 7 --------
+-------------------------------
+-------------------------------
+--- Evaluating zdlm.py ---
+Lattice size: 5.0 fm
+Z function with (l,m) = (0,0)
+ d = [0, 0, 0]
+Shells (nmax) = 20
+From -0.1 to 2.1 140 points
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+110
+120
+130
+-------------------------------
+--- Evaluating quicklook.py ---
+Guesses found: 4
+-------------------------------
+--- Evaluating fzdlm_g.py ---
+F function with (l,m) = (0,0)
+ d = [0, 0, 0]
+4 guesses.
+Calculating F around -0.0208633093525
+Using poles in: [ 0.]
+From -0.036690647482 to -0.00503597122302 25 points
+0
+10
+20
+Calculating F around 0.026618705036
+Using poles in: []
+From 0.0107913669065 to 0.0424460431655 25 points
+0
+10
+20
+Calculating F around 1.00791366906
+Using poles in: [ 1.]
+From 0.992086330935 to 1.02374100719 25 points
+0
+10
+20
+Calculating F around 2.00503597122
+Using poles in: [ 2.]
+From 1.98920863309 to 2.02086330935 25 points
+0
+10
+20
+-------------------------------
+--- Evaluating findspec.py ---
+Solution found at 281.247 MeV
+Solution found at 304.750 MeV
+Solution found at 576.028 MeV
+Solution found at 760.013 MeV
+-------------------------------
+--- Modifying configuration file ---
+L = 5.5 fm
+-------------------------------
+----- Loop 2 out of 7 --------
+-------------------------------
+-------------------------------
+--- Evaluating zdlm.py ---
+Lattice size: 5.5 fm
+Z function with (l,m) = (0,0)
+ d = [0, 0, 0]
+Shells (nmax) = 20
+From -0.1 to 2.1 140 points
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+110
+120
+130
+-------------------------------
+--- Evaluating quicklook.py ---
+Guesses found: 4
+-------------------------------
+--- Evaluating fzdlm_g.py ---
+F function with (l,m) = (0,0)
+ d = [0, 0, 0]
+4 guesses.
+Calculating F around -0.0208633093525
+Using poles in: [ 0.]
+From -0.036690647482 to -0.00503597122302 25 points
+0
+10
+20
+Calculating F around 0.026618705036
+Using poles in: []
+From 0.0107913669065 to 0.0424460431655 25 points
+0
+10
+20
+Calculating F around 1.00791366906
+Using poles in: [ 1.]
+From 0.992086330935 to 1.02374100719 25 points
+0
+10
+20
+Calculating F around 2.00503597122
+Using poles in: [ 2.]
+From 1.98920863309 to 2.02086330935 25 points
+0
+10
+20
+-------------------------------
+--- Evaluating findspec.py ---
+Solution found at 282.790 MeV
+Solution found at 303.173 MeV
+Solution found at 537.686 MeV
+Solution found at 701.598 MeV
+-------------------------------
+--- Modifying configuration file ---
+L = 6.0 fm
+-------------------------------
+----- Loop 3 out of 7 --------
+-------------------------------
+-------------------------------
+--- Evaluating zdlm.py ---
+Lattice size: 6.0 fm
+Z function with (l,m) = (0,0)
+ d = [0, 0, 0]
+Shells (nmax) = 20
+From -0.1 to 2.1 140 points
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+110
+120
+130
+-------------------------------
+--- Evaluating quicklook.py ---
+Guesses found: 4
+-------------------------------
+--- Evaluating fzdlm_g.py ---
+F function with (l,m) = (0,0)
+ d = [0, 0, 0]
+4 guesses.
+Calculating F around -0.0208633093525
+Using poles in: [ 0.]
+From -0.036690647482 to -0.00503597122302 25 points
+0
+10
+20
+Calculating F around 0.0424460431655
+Using poles in: []
+From 0.026618705036 to 0.058273381295 25 points
+0
+10
+20
+Calculating F around 1.00791366906
+Using poles in: [ 1.]
+From 0.992086330935 to 1.02374100719 25 points
+0
+10
+20
+Calculating F around 2.00503597122
+Using poles in: [ 2.]
+From 1.98920863309 to 2.02086330935 25 points
+0
+10
+20
+-------------------------------
+--- Evaluating findspec.py ---
+Solution found at 284.001 MeV
+Solution found at 301.900 MeV
+Solution found at 506.581 MeV
+Solution found at 653.682 MeV
+-------------------------------
+--- Modifying configuration file ---
+L = 6.5 fm
+-------------------------------
+----- Loop 4 out of 7 --------
+-------------------------------
+-------------------------------
+--- Evaluating zdlm.py ---
+Lattice size: 6.5 fm
+Z function with (l,m) = (0,0)
+ d = [0, 0, 0]
+Shells (nmax) = 20
+From -0.1 to 2.1 140 points
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+110
+120
+130
+-------------------------------
+--- Evaluating quicklook.py ---
+Guesses found: 4
+-------------------------------
+--- Evaluating fzdlm_g.py ---
+F function with (l,m) = (0,0)
+ d = [0, 0, 0]
+4 guesses.
+Calculating F around -0.036690647482
+Using poles in: []
+From -0.0525179856115 to -0.0208633093525 25 points
+0
+10
+20
+Calculating F around 0.0424460431655
+Using poles in: []
+From 0.026618705036 to 0.058273381295 25 points
+0
+10
+20
+Calculating F around 1.00791366906
+Using poles in: [ 1.]
+From 0.992086330935 to 1.02374100719 25 points
+0
+10
+20
+Calculating F around 2.00503597122
+Using poles in: [ 2.]
+From 1.98920863309 to 2.02086330935 25 points
+0
+10
+20
+-------------------------------
+--- Evaluating findspec.py ---
+Solution found at 284.973 MeV
+Solution found at 300.856 MeV
+Solution found at 480.981 MeV
+Solution found at 613.808 MeV
+-------------------------------
+--- Modifying configuration file ---
+L = 7.0 fm
+-------------------------------
+----- Loop 5 out of 7 --------
+-------------------------------
+-------------------------------
+--- Evaluating zdlm.py ---
+Lattice size: 7.0 fm
+Z function with (l,m) = (0,0)
+ d = [0, 0, 0]
+Shells (nmax) = 20
+From -0.1 to 2.1 140 points
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+110
+120
+130
+-------------------------------
+--- Evaluating quicklook.py ---
+Guesses found: 4
+-------------------------------
+--- Evaluating fzdlm_g.py ---
+F function with (l,m) = (0,0)
+ d = [0, 0, 0]
+4 guesses.
+Calculating F around -0.036690647482
+Using poles in: []
+From -0.0525179856115 to -0.0208633093525 25 points
+0
+10
+20
+Calculating F around 0.0424460431655
+Using poles in: []
+From 0.026618705036 to 0.058273381295 25 points
+0
+10
+20
+Calculating F around 1.00791366906
+Using poles in: [ 1.]
+From 0.992086330935 to 1.02374100719 25 points
+0
+10
+20
+Calculating F around 2.00503597122
+Using poles in: [ 2.]
+From 1.98920863309 to 2.02086330935 25 points
+0
+10
+20
+-------------------------------
+--- Evaluating findspec.py ---
+Solution found at 285.766 MeV
+Solution found at 299.986 MeV
+Solution found at 459.650 MeV
+Solution found at 580.221 MeV
+-------------------------------
+--- Modifying configuration file ---
+L = 7.5 fm
+-------------------------------
+----- Loop 6 out of 7 --------
+-------------------------------
+-------------------------------
+--- Evaluating zdlm.py ---
+Lattice size: 7.5 fm
+Z function with (l,m) = (0,0)
+ d = [0, 0, 0]
+Shells (nmax) = 20
+From -0.1 to 2.1 140 points
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+110
+120
+130
+-------------------------------
+--- Evaluating quicklook.py ---
+Guesses found: 4
+-------------------------------
+--- Evaluating fzdlm_g.py ---
+F function with (l,m) = (0,0)
+ d = [0, 0, 0]
+4 guesses.
+Calculating F around -0.036690647482
+Using poles in: []
+From -0.0525179856115 to -0.0208633093525 25 points
+0
+10
+20
+Calculating F around 0.0424460431655
+Using poles in: []
+From 0.026618705036 to 0.058273381295 25 points
+0
+10
+20
+Calculating F around 1.00791366906
+Using poles in: [ 1.]
+From 0.992086330935 to 1.02374100719 25 points
+0
+fzdlm_g.py:192: RuntimeWarning: divide by zero encountered in divide
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+fzdlm_g.py:192: RuntimeWarning: invalid value encountered in multiply
+  first_term = sum(np.exp(-r2_array+x2)*(1.0/(r2_array-x2))*(r2_array**(l/2.0))*special.sph_harm(m,l,r_azimuthal,r_polar))
+fzdlm_g.py:219: RuntimeWarning: invalid value encountered in multiply
+  total = gggg*(first_term + second_term + third_term)
+10
+20
+Calculating F around 2.00503597122
+Using poles in: [ 2.]
+From 1.98920863309 to 2.02086330935 25 points
+0
+10
+20
+-------------------------------
+--- Evaluating findspec.py ---
+Solution found at 286.424 MeV
+Solution found at 299.252 MeV
+Solution found at 441.689 MeV
+Solution found at 551.635 MeV
+-------------------------------
+--- Modifying configuration file ---
+L = 8.0 fm
+-------------------------------
+----- Loop 7 out of 7 --------
+-------------------------------
+-------------------------------
+--- Evaluating zdlm.py ---
+Lattice size: 8.0 fm
+Z function with (l,m) = (0,0)
+ d = [0, 0, 0]
+Shells (nmax) = 20
+From -0.1 to 2.1 140 points
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+110
+120
+130
+-------------------------------
+--- Evaluating quicklook.py ---
+Guesses found: 4
+-------------------------------
+--- Evaluating fzdlm_g.py ---
+F function with (l,m) = (0,0)
+ d = [0, 0, 0]
+4 guesses.
+Calculating F around -0.036690647482
+Using poles in: []
+From -0.0525179856115 to -0.0208633093525 25 points
+0
+10
+20
+Calculating F around 0.0424460431655
+Using poles in: []
+From 0.026618705036 to 0.058273381295 25 points
+0
+10
+20
+Calculating F around 1.00791366906
+Using poles in: [ 1.]
+From 0.992086330935 to 1.02374100719 25 points
+0
+10
+20
+Calculating F around 2.00503597122
+Using poles in: [ 2.]
+From 1.98920863309 to 2.02086330935 25 points
+0
+10
+20
+-------------------------------
+--- Evaluating findspec.py ---
+Solution found at 286.976 MeV
+Solution found at 298.626 MeV
+Solution found at 426.424 MeV
+Solution found at 527.086 MeV
+
+Script done on Fri Jul  7 14:22:07 2017
